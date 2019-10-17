@@ -1,37 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<title>whoami</title>
-</head>
-<body>
-	<div id="header">
-		<div id="image">
-			<img src="img/photo.webp" alt="face picture">
-		</div>
-		<div id="description">
-			<span><b>David Sánchez. Software engineering student @ UPM</b></span>
-		</div>
-	</div>
-	<div id="fake-story">
-		<h1>My story</h1>
-		<p>
-			One night while dreaming I was visited by my spirit animal
-			<br>
-			turns out it is a White Skull covered in a Pink Flame (PFWS).
-			<br>
-			<br>
-			It told me to become a Software Engineer to fight the monsters of Closed Source.
-			<br>
-			One day I will have to fight those monsters to build a freer society
-			<br>
-			where people will truly own the software they use.
-			<br>
-			<br>
-			This is my mission and I will <b>DIE</b> for it. //jk
-	</div>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/styles.css">
+    <title>whoami</title>
+  </head>
+  <body>
+		<a onclick="scrollToTop()" class="scrollUp"><i class="fa fa-arrow-circle-up scrollUp" aria-hidden="true"></i></a>
+    <div class="container-fluid" id="body">
+			<div id="navbarRow" class="row">
+				<div id="navbar" class="col-12 pl-0 pr-0">
+					<nav class="navbar justify-content-center">
+						<a class="navbar-brand" href="#">
+							<img class="rounded-circle big-photo" src="img/photo.webp" alt="">
+						</a>
+					</nav>
+				</div>
+				<div id="description" class="col-12 pl-0 pr-0 center-text">
+					<b>David Sánchez. Software engineering student @ UPM</b>
+				</div>
+			</div>
+
+			<div id="contentRow" class="row">
+				<div class="col-12 pl-0 pr-0">
+					<div id="fake-story" class="center-text">
+						<h1>My story</h1>
+						<p>
+							One night while dreaming I was visited by my spirit animal
+							<br>
+							turns out it is a White Skull covered in a Pink Flame (PFWS).
+							<br>
+							<br>
+							It told me to become a Software Engineer to fight the monsters of Closed Source.
+							<br>
+							One day I will have to fight those monsters to build a freer society
+							<br>
+							where people will truly own the software they use.
+							<br>
+							<br>
+							This is my mission and I will <b>DIE</b> for it. //jk
+					</div>
+				</div>
+
+				<div class="col-12 pl-0 pr-0 pt-5">
+					<h1 class="center-text">Projects</h1>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12 col-md-6 pb-5 pt-5 d-flex justify-content-center">
+								<div class="card color-primario" style="width: 24rem;">
+								  <div class="card-body">
+								    <h5 class="card-title"><b>HITO-1</b></h5>
+								    <p class="card-text">First challenge for Core Dumped</p>
+								    <a href="https://davidmss2000.github.io/HITO-1" target="_blank"	class="btn btn-light">Let me see</a>
+								  </div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 pb-5 pt-5 d-flex justify-content-center">
+								<div class="card color-primario" style="width: 24rem;">
+								  <div class="card-body">
+								    <h5 class="card-title"><b>Zombie Escape <small>(provisional name)</small>| WIP</b></h5>
+								    <p class="card-text">A short game about killing zombies to save civilians.</p>
+								    <a href="#" target="_blank" class="btn btn-light disabled">Let me play</a>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footerRow" class="row">
+				<div class="col-12 pl-0 pr-0">
+					<footer class="page-footer font-small">
+					  <div class="py-3 center-text">© 2019 Copyright: <a href="#">davidmss2000</a>
+					  </div>
+					</footer>
+				</div>
+			</div>
+    </div>
+		<script type="text/javascript">
+			function scrollToTop() {
+				window.scrollTo(0, 0);
+			}
+		</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

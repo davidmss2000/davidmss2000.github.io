@@ -1,6 +1,4 @@
 *{
-	margin: 0;
-	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -9,39 +7,42 @@ body{
 	color: #ABABAB;
 }
 
-#header{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
+.navbar {
 	background-color: #462836;
-	width: 100vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
-}
-
-#image{
-	display: flex;
-	justify-content: center;
-	width: 100vw;
-}
-
-#image > img{
-	height: 20vw;
-	width: 20vw;
-	border-radius: 100%;
 }
 
 #description{
-	display: flex;
-	text-align: center;
-	width: 100vw;
-	margin-top: 1vw;
+	font-size: 1.2em;
+	background-color: #462836;
+	padding-bottom: 0.5em;
+}
+.center-text{
+  text-align: center;
 }
 
-#description > span{
-	width: 100vw;
-	font-size: 20px;
+.big-photo{
+	height: 40vw;
+}
+
+footer{
+	background-color: #462836;
+}
+
+.color-primario{
+	background-color: #462836;
+}
+
+.scrollUp{
+	cursor: pointer;
+	color: #ABABAB;
+	font-size: 6vw;
+	position: fixed;
+	z-index: 1;
+	border: none;
+	background-color: transparent;
+	border-radius: 100%;
+	left: 90vw;
+	top: 90vh;
 }
 
 #fake-story{
@@ -49,6 +50,36 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	width: 100vw;
 	text-align: center;
+}
+
+.see{
+	background-color: red;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.big-photo{
+		height: 30vw;
+	}
+
+	.scrollUp{
+		font-size: 4vw;
+	}
+}
+
+/*/ Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.big-photo{
+		height: 20vw;
+	}
+}
+
+/*/ Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }
